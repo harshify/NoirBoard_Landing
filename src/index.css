@@ -1,0 +1,43 @@
+:root {
+  --background: #0f0f12;
+  --accent-gradient-start: #6d5aff;
+  --accent-gradient-end: #9333ea;
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --card-background: #1a1a20;
+  --border-color: #2a2a35;
+  --button-hover: #8457ed;
+  --header-height: 80px;
+  --transition-speed: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+} 

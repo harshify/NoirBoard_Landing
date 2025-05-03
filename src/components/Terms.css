@@ -1,0 +1,104 @@
+.terms {
+  padding: 150px 0 100px;
+  position: relative;
+}
+
+.terms-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--card-background);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.terms-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.terms-header h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.terms-intro {
+  margin-bottom: 30px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.terms-section {
+  margin-bottom: 30px;
+}
+
+.terms-section h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.terms-section h4::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(to bottom, var(--accent-gradient-start), var(--accent-gradient-end));
+  border-radius: 2px;
+}
+
+.terms-section p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.terms-section a {
+  color: var(--accent-gradient-start);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.terms-section a:hover {
+  color: var(--accent-gradient-end);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .terms {
+    padding: 120px 0 80px;
+  }
+  
+  .terms-content {
+    padding: 25px;
+  }
+  
+  .terms-header h3 {
+    font-size: 1.5rem;
+  }
+  
+  .terms-section h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .terms {
+    padding: 100px 0 60px;
+  }
+  
+  .terms-content {
+    padding: 20px;
+  }
+  
+  .terms-intro {
+    font-size: 1rem;
+  }
+} 

@@ -1,0 +1,153 @@
+footer {
+  padding: 60px 0 30px;
+  background-color: rgba(30, 30, 40, 0.6);
+  position: relative;
+  margin-top: auto;
+  border-top: 1px solid var(--border-color);
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(109, 90, 255, 0.03) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.footer-logo .logo-icon {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.footer-logo h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.footer-description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: var(--text-primary);
+}
+
+.footer-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: var(--accent-gradient-start);
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-info {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.footer-info p {
+  margin: 0;
+}
+
+.github-link {
+  color: var(--accent-gradient-start);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.github-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 0 25px;
+  }
+  
+  .footer-columns {
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .footer-column {
+    min-width: 100%;
+  }
+  
+  .footer-content {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 30px 0 20px;
+  }
+  
+  .footer-content {
+    gap: 20px;
+  }
+  
+  .footer-columns {
+    gap: 20px;
+  }
+} 

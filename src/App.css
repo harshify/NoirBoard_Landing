@@ -1,0 +1,120 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background-color: rgba(15, 15, 18, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 100;
+  padding: 0;
+  border-bottom: 1px solid rgba(42, 42, 53, 0.5);
+  transition: all var(--transition-speed) ease;
+}
+
+header.sticky {
+  background-color: rgba(15, 15, 18, 0.95);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  height: 70px;
+}
+
+/* Buttons */
+.cta-button {
+  background: linear-gradient(to right, var(--accent-gradient-start), var(--accent-gradient-end));
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.7s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(109, 90, 255, 0.3);
+}
+
+.cta-button:hover::before {
+  left: 100%;
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+.primary-cta {
+  background: linear-gradient(to right, var(--accent-gradient-start), var(--accent-gradient-end));
+}
+
+.secondary-cta {
+  background: transparent;
+  border: 2px solid var(--accent-gradient-start);
+  color: var(--text-primary);
+}
+
+.secondary-cta:hover {
+  background: rgba(109, 90, 255, 0.1);
+}
+
+/* Section titles */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to right, var(--accent-gradient-start), var(--accent-gradient-end));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.page-content {
+  padding-top: 100px;
+  min-height: calc(100vh - 200px);
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding-top: 80px;
+  }
+}
+
+.section-container {
+  width: 100%;
+}
+
+.section-wrapper {
+  width: 100%;
+  scroll-margin-top: 100px; /* This helps with smooth scrolling to sections */
+}
+
+.section-page {
+  width: 100%;
+} 
