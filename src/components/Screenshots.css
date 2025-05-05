@@ -59,11 +59,34 @@
 }
 
 @media (max-width: 576px) {
+  .screenshots {
+    padding: 60px 0;
+  }
+  
   .screenshot {
     margin-bottom: 20px;
+    box-shadow: 0 15px 30px -15px rgba(0, 0, 0, 0.3);
   }
   
   .screenshot:hover {
     transform: none;
+  }
+  
+  .screenshot:hover img {
+    transform: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .screenshots {
+    padding: 50px 0;
+  }
+  
+  .screenshot {
+    border-radius: 12px;
+  }
+  
+  .screenshot img {
+    border-radius: 12px;
   }
 } 

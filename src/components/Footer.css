@@ -145,9 +145,41 @@ footer::before {
   
   .footer-content {
     gap: 20px;
+    padding: 0 10px;
   }
   
   .footer-columns {
     gap: 20px;
+  }
+  
+  .footer-link {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+  
+  .footer-nav-links {
+    gap: 5px;
+  }
+  
+  .footer-heading {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .footer-link {
+    padding: 10px 0;
+  }
+  
+  .footer-logo h3 {
+    font-size: 1.2rem;
+  }
+  
+  .footer-heading {
+    font-size: 1rem;
+  }
+  
+  .footer-info {
+    font-size: 0.75rem;
   }
 } 

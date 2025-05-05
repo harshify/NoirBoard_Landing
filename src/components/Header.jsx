@@ -162,12 +162,12 @@ function Header() {
             <span className="nav-icon"><i className="fas fa-file-contract"></i></span>
             <span className="nav-text">Terms</span>
           </Link>
-          <a href="https://chrome.google.com/webstore" className="mobile-cta" onClick={closeMenu}>
+          <a href="https://chromewebstore.google.com/detail/ajoohnjphfoajgoapikbhldobodedlpd?utm_source=item-share-cb" className="mobile-cta" onClick={closeMenu}>
             <i className="fab fa-chrome"></i> Add to Chrome
           </a>
         </nav>
         
-        <a href="https://chrome.google.com/webstore" className="cta-button desktop-cta" target="_blank" rel="noreferrer">
+        <a href="https://chromewebstore.google.com/detail/ajoohnjphfoajgoapikbhldobodedlpd?utm_source=item-share-cb" className="cta-button desktop-cta" target="_blank" rel="noreferrer">
           <i className="fab fa-chrome"></i> Add to Chrome
         </a>
       </div>

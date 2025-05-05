@@ -44,7 +44,7 @@ function Hero() {
             <p className="hero-subtitle">A productivity dashboard just for you</p>
             <p className="hero-description">Transform your new tab into a personalized command center that boosts productivity and helps you stay focused on what matters.</p>
             <div className="hero-buttons">
-              <a href="https://chrome.google.com/webstore" className="cta-button primary-cta" target="_blank" rel="noreferrer">
+              <a href="https://chromewebstore.google.com/detail/ajoohnjphfoajgoapikbhldobodedlpd?utm_source=item-share-cb" className="cta-button primary-cta" target="_blank" rel="noreferrer">
                 <i className="fab fa-chrome"></i> Add to Chrome
               </a>
               <a href="#features" className="cta-button secondary-cta">

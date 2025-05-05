@@ -142,6 +142,7 @@
     transition: all 0.3s ease;
     z-index: 101;
     gap: 20px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   }
 
   .nav-links.active {
@@ -161,5 +162,46 @@
 
   body.nav-open {
     overflow: hidden;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo h2 {
+    font-size: 1.3rem;
+  }
+  
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .nav-links {
+    width: 85%;
+    padding: 80px 15px;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  
+  .menu-toggle {
+    width: 24px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo h2 {
+    font-size: 1.1rem;
+  }
+  
+  .logo-icon {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .nav-links {
+    width: 100%;
   }
 } 

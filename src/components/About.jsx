@@ -12,7 +12,7 @@ function About() {
             to-do lists, goal tracking, weather updates, and expense management in one elegant interface. With its minimalist dark theme, 
             NoirBoard helps you stay focused while providing everything you need for a productive day at your fingertips.
           </p>
-          <a href="https://chrome.google.com/webstore" className="cta-button primary-cta" target="_blank" rel="noreferrer">
+          <a href="https://chromewebstore.google.com/detail/ajoohnjphfoajgoapikbhldobodedlpd?utm_source=item-share-cb" className="cta-button primary-cta" target="_blank" rel="noreferrer">
             <i className="fab fa-chrome"></i> Add to Chrome
           </a>
         </div>

@@ -10,6 +10,20 @@ import ScrollToTop from './components/ScrollToTop'
 import './App.css'
 
 function App() {
+  // Ensure proper viewport settings for mobile devices
+  useEffect(() => {
+    // Check if viewport meta tag exists, if not create it
+    let viewportMeta = document.querySelector('meta[name="viewport"]')
+    if (!viewportMeta) {
+      viewportMeta = document.createElement('meta')
+      viewportMeta.setAttribute('name', 'viewport')
+      document.head.appendChild(viewportMeta)
+    }
+    
+    // Set the viewport content for optimal mobile display
+    viewportMeta.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+  }, [])
+
   return (
     <Router>
       <ScrollToTop />

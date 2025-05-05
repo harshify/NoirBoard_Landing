@@ -104,6 +104,47 @@ header.sticky {
   .page-content {
     padding-top: 80px;
   }
+  
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .cta-button {
+    padding: 9px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-content {
+    padding-top: 70px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .section-wrapper {
+    scroll-margin-top: 80px;
+  }
+  
+  .cta-button {
+    padding: 8px 18px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
 }
 
 .section-container {
